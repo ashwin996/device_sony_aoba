@@ -37,7 +37,7 @@ COMMON_GLOBAL_CFLAGS += -DLEGACY_BLOB_COMPATIBLE -DQCOM_LEGACY_UIDS -DNEEDS_VECT
 
 # display
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/sony/nozomi/config/egl.cfg
+BOARD_EGL_CFG := device/sony/aoba/config/egl.cfg
 
 TARGET_USES_ION := true
 TARGET_USES_OVERLAY := true
@@ -50,7 +50,7 @@ BOARD_USES_ALSA_AUDIO := true
 # bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/sony/nozomi/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/sony/aoba/bluetooth
 
 # sensor
 BOARD_USES_GENERIC_INVENSENSE := false
@@ -83,18 +83,10 @@ BOARD_HAVE_FMRADIO := true
 BOARD_HAVE_FMRADIO_BCM := true
 
 # kernel
-TARGET_NO_MULTIKERNEL := false
+TARGET_NO_MULTIKERNEL := true
 
 BOARD_KERNEL_MSM := true
-KERNEL_DEFCONFIG := fuji_nozomi_defconfig
-
-ifeq ($(TARGET_NO_MULTIKERNEL),false)
-BOARD_KERNEL_MSM_OC := true
-KERNEL_DEFCONFIG_OC := fuji_nozomi_oc_defconfig
-
-BOARD_KERNEL_MSM_OC_ULTRA := true
-KERNEL_DEFCONFIG_OC_ULTRA := fuji_nozomi_oc_ultra_defconfig
-endif
+KERNEL_DEFCONFIG := fuji_aoba_defconfig
 
 # board
 TARGET_BOARD_PLATFORM := msm8660
@@ -134,22 +126,22 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BUILD_FS := dynamic
 
 # fstab
-TARGET_RECOVERY_FSTAB := device/sony/nozomi/config/recovery.$(BUILD_FS).fstab
+TARGET_RECOVERY_FSTAB := device/sony/aoba/config/recovery.$(BUILD_FS).fstab
 RECOVERY_FSTAB_VERSION := 2
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := LT26i,nozomi
+TARGET_OTA_ASSERT_DEVICE := LT26w,aoba
 
 # custom boot
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/nozomi/custom/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/sony/aoba/custom/custombootimg.mk
 
 # custom ota
-BOARD_CUSTOM_OTA_MK := device/sony/nozomi/custom/customota.mk
+BOARD_CUSTOM_OTA_MK := device/sony/aoba/custom/customota.mk
 
 # CM Hardware
-BOARD_HARDWARE_CLASS := device/sony/nozomi/cmhw/
+BOARD_HARDWARE_CLASS := device/sony/aoba/cmhw/
 
--include vendor/sony/nozomi/BoardConfigVendor.mk
+-include vendor/sony/aoba/BoardConfigVendor.mk
 
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
