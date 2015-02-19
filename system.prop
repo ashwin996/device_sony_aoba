@@ -31,7 +31,12 @@ persist.actionsafe.maxwidth=20
 persist.actionsafe.maxheight=20
 keyguard.no_require_sim=1
 
-telephony.lteOnCdmaDevice=0
+# Radio
+mobiledata.interfaces=rmnet_sdio0,rmnet_sdio1
+ro.telephony.default_network=9
+telephony.lteOnGsmDevice=1
+ro.enable.fast_dormancy=false
+persist.data_netmgrd_nint=11
 
 
 debug.sf.hw=1
@@ -45,6 +50,9 @@ dev.pm.dyn_samplingrate=1
 
 hw.hdmi.limit_to_720p=1
 hw.hdmi.resolution=-1
+
+# HDMI
+ro.hdmi.enable=true
 
 #
 # system prop for opengles version
@@ -82,7 +90,6 @@ mmp.enable.3g2=true
 # system props for the data modules
 #
 ro.use_data_netmgrd=true
-persist.data_netmgrd_nint=3
 
 #system props for time-services
 persist.timed.enable=true
