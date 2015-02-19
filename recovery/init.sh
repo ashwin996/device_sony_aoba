@@ -12,13 +12,13 @@ LED_RED=/sys/class/leds/red/brightness
 LED_GREEN=/sys/class/leds/green/brightness
 LED_BLUE=/sys/class/leds/blue/brightness
 
-EVENT_NODE="/dev/input/event1 c 13 65"
-EVENT="/dev/input/event1"
-FOTA_NODE="/dev/block/mmcblk0p11 b 179 11"
-FOTA="/dev/block/mmcblk0p11"
+EVENT_NODE="/dev/input/event0 c 13 64"
+EVENT="/dev/input/event0"
+FOTA_NODE="/dev/block/mmcblk0p14 b 179 14"
+FOTA="/dev/block/mmcblk0p14"
 
-CACHE_NODE="/dev/block/mmcblk0p13 b 179 13"
-CACHE="/dev/block/mmcblk0p13"
+CACHE_NODE="/dev/block/mmcblk0p16 b 179 16"
+CACHE="/dev/block/mmcblk0p16"
 
 DATA_NODE="/dev/block/mmcblk0p14 b 179 14"
 DATA="/dev/block/mmcblk0p14"
