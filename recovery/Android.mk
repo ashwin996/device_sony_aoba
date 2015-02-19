@@ -1,4 +1,4 @@
-ifneq ($(filter nozomi,$(TARGET_DEVICE)),)
+ifneq ($(filter aoba,$(TARGET_DEVICE)),)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
