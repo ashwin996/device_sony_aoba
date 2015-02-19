@@ -1,3 +1,3 @@
-device_sony_nozomi
+device_sony_aoba
 
-based on billchen1977 work
+based on billchen1977 & mickybart's work
