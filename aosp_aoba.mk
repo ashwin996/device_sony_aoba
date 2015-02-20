@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, device/sony/nozomi/full_aoba.mk)
+$(call inherit-product, device/sony/aoba/full_aoba.mk)
 
 PRODUCT_NAME := aosp_aoba
 
