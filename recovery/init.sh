@@ -20,11 +20,11 @@ FOTA="/dev/block/mmcblk0p14"
 CACHE_NODE="/dev/block/mmcblk0p16 b 179 16"
 CACHE="/dev/block/mmcblk0p16"
 
-DATA_NODE="/dev/block/mmcblk0p14 b 179 14"
+DATA_NODE="/dev/block/mmcblk0p17 b 179 17"
 DATA="/dev/block/mmcblk0p14"
 
-SDCARD0_NODE="/dev/block/mmcblk0p15 b 179 15"
-SDCARD0="/dev/block/mmcblk0p15"
+SDCARD0_NODE="/dev/block/mmcblk0p18 b 179 18"
+SDCARD0="/dev/block/mmcblk0p18"
 
 SLEEP_TIME=3
 
