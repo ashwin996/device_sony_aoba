@@ -7,7 +7,7 @@
 /dev/block/mmcblk0p16 /cache f2fs noatime,nosuid,nodev,discard,nodiratime,inline_xattr,errors=recover wait,check
 /dev/block/mmcblk0p17 /data f2fs noatime,nosuid,nodev,discard,nodiratime,inline_xattr,errors=recover wait,check,encryptable=footer
 # sdcard mounting
-/devices/platform/msm_sdcc.1/mmc_host/mmc0 auto vfat noatime,nosuid,noexec,nodiratime,rw voldmanaged=sdcard0:15,nonremovable,noemulatedsd
+/devices/platform/msm_sdcc.1/mmc_host/mmc0 auto vfat noatime,nosuid,noexec,nodiratime,rw voldmanaged=sdcard0:18,nonremovable,noemulatedsd
 /devices/platform/msm_sdcc.3/mmc_host/mmc1 auto auto noatime,nosuid,noexec,nodiratime,rw voldmanaged=sdcard1:auto
 /devices/platform/msm_hsusb_host.0 auto auto defaults voldmanaged=usbdisk:auto
 
